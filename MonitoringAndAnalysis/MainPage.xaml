@@ -1,0 +1,37 @@
+﻿<Page x:Class="MonitoringAndAnalysis.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MonitoringAndAnalysis"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainPage">
+
+    <Grid >
+        <Grid Margin="197,67,10,10" Name ="Chart"/>
+
+        <Grid Margin="5,67,635,5" >
+
+            <Button Name="btnName" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" Width="140" Height="50" Click="btnName_Click">
+                <TextBlock Text="Количество договоров с компаниями" TextWrapping="Wrap" TextAlignment="Center"/>
+            </Button>
+            <Button HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Top" Width="140" Height="50" Click="Button_Click_2">
+                <TextBlock Text="Возраст потенциальных работников" TextWrapping="Wrap" TextAlignment="Center"/>
+            </Button>
+            <Button HorizontalAlignment="Center" Margin="0,140,0,0" VerticalAlignment="Top" Width="140" Height="30" Click="Button_Click_3">
+                <TextBlock Text="Нужды компаний" TextWrapping="Wrap" TextAlignment="Center"/>
+            </Button>
+            <Button HorizontalAlignment="Center" Margin="0,180,0,0" VerticalAlignment="Top" Width="140" Height="50" Click="Button_Click_1">
+                <TextBlock Text="Количество активных договоров " TextWrapping="Wrap" TextAlignment="Center"/>
+            </Button>
+            <Button Name="SessionsBtn" HorizontalAlignment="Center" Margin="0,240,0,0" VerticalAlignment="Top" Width="140" Height="50" Visibility="Hidden" Click="SessionsBtn_Click">
+                <TextBlock Text="Пользовательские сессии" TextWrapping="Wrap" TextAlignment="Center"/>
+            </Button>
+            <Button Content="Выйти" HorizontalAlignment="Center" Margin="0,326,0,0" VerticalAlignment="Top" Width="140" Height="30" Click="Button_Click"/>
+        </Grid>
+        <Grid Margin="0,0,0,388" >
+            <Label Foreground="White" Name="LoginInfo" Content="" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Width="227"/>
+        </Grid>
+    </Grid>
+</Page>
